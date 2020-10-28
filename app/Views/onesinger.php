@@ -12,7 +12,7 @@
                 <p><strong>Age:</strong> {age}</p>
                 <p><strong>Birthday:</strong> {birthday}</p>
                 <p><strong>Food:</strong> {food}</p>
-		<p><img src="/image/{image}"/></p>
+		<p><img src="/media/image/{image}"/></p>
 		<p><a href="/home">Home</a></p>
 	</body>
 </html>
