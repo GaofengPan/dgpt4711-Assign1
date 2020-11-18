@@ -22,9 +22,9 @@ public function index() {
     }
     $table->addRow('<p><a href="/sing">HOME</a></p>');
     //step2
-    $template = [ 'table_open' => '<table cellpadding="2px">',
-        'cell_start' => '<td style="border: 1px solid #dddddd;">',
-        'row_alt_start' => '<tr style="background-color:#dddddd">', ]; 
+    $template = [ 'table_open' => '<table border="1">',
+        'cell_start' => '<td>',
+        'row_start' => '<tr>', ]; 
     $table->setTemplate($template);
     $fields = [           
         'title' => 'Chinese Pop Singers',     
