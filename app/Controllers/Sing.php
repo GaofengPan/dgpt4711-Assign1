@@ -20,11 +20,10 @@ public function index() {
         $table->addRow($record->name,'<img src="/media/image/'.$record->image.'">',$nameLink);
        
     }
-    $table->addRow('<p><a href="/sing">HOME</a></p>');
     //step2
-    $template = [ 'table_open' => '<table border="1">',
-        'cell_start' => '<td>',
-        'row_start' => '<tr>', ]; 
+    $template = [ 'table_open' => '<table cellpadding="2px">',
+        'cell_start' => '<td style="border: 1px solid #dddddd;">',
+        'row_alt_start' => '<tr style="background-color:#dddddd">', ];
     $table->setTemplate($template);
     $fields = [           
         'title' => 'Chinese Pop Singers',     
@@ -58,7 +57,6 @@ public function showme($id)
     $table->addRow($headings[5],$record["birthday"]);
     $table->addRow($headings[6],$record["food"]);
     $table->addRow($headings[7],"<img src='/media/image/".$record['image'].'\'/>');
-    $table->addRow('<p><a href="/sing">HOME</a></p>');
     //step2
     $template = [ 'table_open' => '<table cellpadding="2px">',
         'cell_start' => '<td style="border: 1px solid #dddddd;">',
